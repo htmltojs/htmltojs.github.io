@@ -21,6 +21,27 @@ body {
     background-color: rgb(36, 34, 34);
 }
 
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__contacts {
+    width: 66px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.about__contacts ul li img {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+}
+
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 26px;
@@ -284,11 +305,26 @@ p {
         -ms-grid-column: span 6;
             grid-column-start: span 6;
     }
+    .feed {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .card:nth-child(n) {
         -ms-grid-column: span 12;
             grid-column-start: span 12;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about__contacts {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .feed {
+        margin-top: 10px;
     }
 }
