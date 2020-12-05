@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../header_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Site 001. Burger House</title>
 </head>
@@ -186,18 +187,7 @@
     </div>
 </div>
 
-<script>
-    window.onscroll = function() {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
-    if(scrolled !== 0){
-        // Если прокрутка есть, то делаем блок прозрачным
-        document.querySelector('.nav__menu').style.opacity = '0.5';
-    }else{
-        // Если нет, то делаем его полностью видимым
-        document.querySelector('.nav__menu').style.opacity = '1';
-    };
-    };
-</script>
+<script type="text/javascript" src="../header_js.js"></script>
 
 </body>
 </html>

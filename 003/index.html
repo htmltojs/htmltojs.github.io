@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NATURETOUR</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../header_style.css">
 </head>
 <body>
 
@@ -331,18 +332,7 @@
 
 </div>
 
-<script>
-  window.onscroll = function() {
-  var scrolled = window.pageYOffset || document.documentElement.scrollTop; // Получаем положение скролла
-  if(scrolled !== 0){
-      // Если прокрутка есть, то делаем блок прозрачным
-      document.querySelector('.nav__menu').style.opacity = '0.5';
-  }else{
-      // Если нет, то делаем его полностью видимым
-      document.querySelector('.nav__menu').style.opacity = '1';
-  };
-  };
-</script>
+<script type="text/javascript" src="../header_js.js"></script>
 
 </body>
 </html>
