@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-    height: 667px;
+    height: 683px;
     background-color: #FAE0D8;
 }
 
@@ -94,13 +94,13 @@ a {
 }
 
 .slider__img {
-    height: 484px;
+    height: 497px;
     margin-right: 12%;
 }
 
 .slider__img img {
-    margin-top: 4vh;
-    height: 569px;
+    height: 614px;
+    margin-bottom: -117px;
 }
 
 .header__slider .slider__text h1{
@@ -137,7 +137,7 @@ a {
 }
 
 .header__text {
-    height: 113px;
+    height: 116px;
     width: 100%;
     display: flex;
     justify-content: space-between;
