@@ -1022,6 +1022,10 @@ section {
 }
 
 @media only screen and (max-width: 800px) {
+  .slider_text {
+    padding: 10px;
+  }
+
   .slider_text h3, .slider_text h2 {
     font-size: 18px;
   }

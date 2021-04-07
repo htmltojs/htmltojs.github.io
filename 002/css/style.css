@@ -581,9 +581,29 @@ a {
     margin: 40% 15%;
 }
 
+.mobile {
+    display: none;
+}
+
 
 /* DESKTOP 1150px*/
+@media only screen and (max-width: 1050px) {
+    .container, .products, .community, .feedback, .mentios, .follow, .footer {
+        display: none;
+    }
 
+    .mobile {
+        display: flex;
+        justify-content: center;
+        line-height: 100vh;
+    }
+
+    .mobile p {
+        font-size: 2em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+    }
+}
 
 /* MOBILE 768px - 1150px*/
 

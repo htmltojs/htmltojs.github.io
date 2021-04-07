@@ -11,3 +11,22 @@ a {
     text-decoration: none;
 }
 
+.dev_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dev_img img {
+    margin: 0 auto;
+    height: 250px;
+}
+
+.dev_img p {
+    font-size: 1.3em;
+    font-family: 'Kiwi Maru', serif;
+    width: 500px;
+    margin-bottom: 20px;
+}
