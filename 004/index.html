@@ -26,13 +26,127 @@
         <a href="#" class="cta"><button>Contact</button></a>
     </div>
 
-    <div class="dev_img">
-        <img src="../img/dev.png" alt="">
-        <p>Website development is in full swing, and the developer has already drunk all the coffee.</p>
-        <p>So the site will appear soon...</p>
+<div class="content">
+    <div class="nav">
+        <div class="logo">
+            <img src="./img/Logo_1.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="">О нас</a></li>
+            </ul>
+        </div>
+        <div class="button__order"><a href="">Заказать ремонт</a></div>
+        <div class="contact">
+            <div class="contact__box"><img src="./img/phone-call.png" alt=""><a href="tel:+38 (063) 608 38 35">+38 (063) 608 38 35</a></div>
+            <div class="contact__box"><img src="./img/phone-call.png" alt=""><a href="tel:+38 (050) 651 70 20">+38 (050) 651 70 20</a></div>
+        </div>
     </div>
+    <div class="slider">
+        <img src="./img/image_1.png" alt="">
+        <div class="slider__title">
+            <h4>Более 20 лет на рынке</h4>
+        </div>
+    </div>
+    <div class="aboutUs">
+        <div class="aboutUs__text">
+            <div class="text__us">
+                <h1>О нас</h1>
+                <p>Мы опытные специалисты в сфере ремонта квартир, которые помогут провести ремонт именно так, как вы хотите.</p>
+                <p>Разрабатываем индивидуальные дизайны по вашим предпочтениям. Ремонт квартир, ванных, прихожих, поклейка обоев, потолки, пол, ремонт любой комнаты, коммуникации.</p>
+                <p>Делаем ремонты больше 12 лет, всегда качественно надежно, за умеренные деньги.</p>
+                <div class="bottom">
+                    <a href="" class="bottom__1">Заказать ремонт</a>
+                    <a href="" class="bottom__2">Этапы ремонта квартиры</a>
+                </div>
+            </div>
+        </div>
+        <div class="aboutUs__img">
+            <img src="./img/aboutUs_image1.png" alt="">
+        </div>
+    </div>
+    <div class="ourAdvantages">
+        <img src="./img/back_1.png" alt="">
+        <div class="blackground_cover"></div>
+        <h2>Почему выбирают нас?</h2>
+        <div class="ourAdvantages__box">
+            <div class="box box__1">
+                <h5><span>12</span> лет</h5>
+                <p>на рынке</p>
+            </div>
+            <div class="box hr"></div>
+            <div class="box">
+                <h5>более <span>2000 м2</span></h5>
+                <p>выполненно за всё время</p>
+            </div>
+            <div class="box">
+                <h5><span>1-ый</span> выезд на объект</h5>
+                <p>бесплатно</p>
+            </div>
+        </div>
+        <a href="" class="bottom">Узнать цену</a>
+    </div>
+    <div class="case">
+        <img src="./img/worker_1.png" alt="">
+        <div class="case__box">
+            <h3>Что мы выполняем</h3>
+            <div class="box__check">
+                <div class="check"><img src="./img/check.png" alt=""><p>Монтаж, укладка пола</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Ремонт ванной</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Ремонт офисов</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Ремонт дома</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Строительные работы</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Дизайн интерьера</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Отделочные работы</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Демонтажные работы</p></div>
+                <div class="check"><img src="./img/check.png" alt=""><p>Ремонт "под ключ"</p></div>
+            </div>
+            <a href="" class="bottom">Посмотреть больше</a>
+        </div>
+    </div>
+    <div class="form">
+        <img src="./img/back_1.png" alt="">
+        <div class="blackground_cover"></div>
+        <div class="roulette"><img src="./img/roulette.png" alt=""></div>
+        <div class="form__box">
+            <div class="form__text">
+                <h2>Рассчитать стоимость ремнота</h2>
+                <p>При ремонте доставка стройматериалов с оптовой базы, дешевле чем в супермаркетах!</p>
+            </div>
+            <div class="form__input">
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Имя*">
+                    <input type="tel" name="tel" id="tel" placeholder="Номер телефона*">
+                    <a href="javascript: void(0);" id="submit" class="bottom">Рассчитать</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
     
     <script type="text/javascript" src="../header_js.js"></script>
-
+    <script type="text/javascript"> 
+    $(document).ready(function() { 
+        $("#submit").on("click", function() { 
+            var name = $("#name").val(); // Получаем имя 
+            var tel = $("#tel").val(); // Получаем телефон
+            // var message = $("#message").val(); // Получаем сообщение 
+            $.ajax({ url: "./form.php", // Куда отправляем данные (обработчик) 
+            type: "post", data: { 
+                            "name": name, 
+                            "tel": tel
+                            // "message": message 
+                                }, success: function(data) { 
+                                    $(".result").html(data); // Выводим результат 
+                                } 
+                            }); 
+                        }); 
+                    }); 
+    </script>
     </body>
 </html>
