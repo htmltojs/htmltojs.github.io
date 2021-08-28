@@ -592,7 +592,10 @@ form input::placeholder {
     .mobile {
         display: flex;
         justify-content: center;
-        line-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        margin: 0 50px;
     }
 
     .mobile p {
