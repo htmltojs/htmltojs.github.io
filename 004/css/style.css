@@ -29,6 +29,7 @@ body {
     height: 70px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -139,7 +140,7 @@ p {
 }
 
 .aboutUs__img img {
-    width: 570px;
+    width: 100%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -580,7 +581,7 @@ form {
 .reviews__hr .horizon__hr2, 
 .reviews__hr .horizon__hr3 {
     width: 32px;
-    height: 1px;
+    height: 2px;
 }
 
 .reviews__hr .horizon__hr2 {
@@ -720,8 +721,8 @@ form {
 }
 
 .video__video img {
-    width: 570px;
-    height: 329px;
+    width: 100%;
+    height: 80%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -829,6 +830,53 @@ form {
 
 /* DESKTOP 1150px*/
 @media only screen and (max-width: 1420px) {
+    .nav {
+        height: 100px;
+        padding: 1% 0;
+    }
+    .contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .bottom__2 {
+        margin-top: 20px;
+    }
+    .case__box .box__check {
+        width: 600px;
+    }
+    .reviews__block .block__, .reviews__block .block__1, .reviews__block .block__3 {
+        padding: 15px;
+    }
+    .block .block__name img {
+        margin-right: 5px;
+    }
+    .block {
+        margin: 0 5px;
+    }
+    .works__gallery .gallery__pic {
+        width: 49%;
+        height: 100%;
+        margin: .5%;
+    }
+    .works__gallery .gallery__pic img {
+        display: block;
+        width: 100%;
+        height: calc(100%/3);
+        position: relative;
+    }
+    .our_works {
+        background-repeat: repeat-y;
+        background-image: url(../img/back_2_2.png);
+    }
+}
+
+/*@media only screen and (max-width: 1420px) {
     .content {
         display: none;
     }
@@ -847,4 +895,4 @@ form {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-style: italic;
     }
-}
+}*/
