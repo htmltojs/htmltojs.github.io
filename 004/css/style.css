@@ -877,9 +877,7 @@ form {
 }
 
 /*@media only screen and (max-width: 1420px) {
-    .content {
-        display: none;
-    }
+
 
     .mobile {
         display: flex;
