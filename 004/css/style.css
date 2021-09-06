@@ -949,6 +949,126 @@ form {
     .case__box .bottom {
         margin-top: 0;
     }
+    .form .form__box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15%;
+    }
+    .form .form__text, .form .form__text p {
+        width: 100%;
+    }
+    .form__input {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .form__input form, .form__input form a {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .form__input form input {
+        width: 100%;
+    }
+    .roulette img {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 20%;
+    }
+    .reviews__block {
+        display: flex;
+        flex-direction: column;
+        height: 430px;
+        justify-content: normal;
+    }
+    .reviews__block .block__2 {
+        height: 350px;
+        width: 280px;
+        background-color: #2E2E2E;
+        padding: 30px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reviews__block .block__1, .reviews__block .block__3  {
+        height: 320px;
+        width: 260px;
+        background-color: #2E2E2E;
+        padding: 25px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reviews__block .block__1, .reviews__block .block__3  {
+        margin-top: 1.5%;
+    }
+    .block {
+        position: absolute;
+    }
+    .reviews__block .block__1 {
+        margin-left: -200px;
+        z-index: -1;
+    }
+    .reviews__block .block__3 {
+        margin-left: 200px;
+        z-index: -1;
+    }
+    .our_works {
+        background-color: #2F2F32;
+        background-image: none;
+    }
+    .works__gallery .gallery__pic {
+        width: 100%;
+        height: 100%;
+        margin: .5%;
+    }
+    .works__gallery .gallery__pic img {
+        display: block;
+        width: 100%;
+        height: calc(100%/3);
+        position: relative;
+    }
+    .video {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    .video__text, .video__video {
+        width: 100%;
+    }
+    .video__video {
+        margin-top: 10px;
+    }
+    .video__textUs .video__bottom {
+        margin: 10px 0 10px;
+    }
+    .video .video__arrow {
+        margin-top: 10px;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer .footer__img, .footer .callnumber, .footer .navmenu, .footer .email {
+        width: 50%;
+    }
+    .footer .footer__img {
+        order: 1;
+    }
+    .footer .callnumber {
+        order: 2;
+    }
+    .footer .callnumber .number {
+        width: 100%;
+    }
+    .footer .navmenu {
+        order: 3;
+    }
+    .footer .email {
+        order: 4;
+    }
 }
  
 
