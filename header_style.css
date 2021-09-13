@@ -53,3 +53,15 @@
 .nav__menu button:hover {
     background-color: rgb(86, 97, 255, 0.8);
 }
+
+@media only screen and (max-width: 1023px) {
+    .nav__menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav__menu nav {
+        order: 3;
+    }
+}

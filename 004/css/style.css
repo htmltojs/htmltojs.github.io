@@ -848,7 +848,7 @@ form {
         margin-top: 20px;
     }
     .case__box .box__check {
-        width: 600px;
+        width: 100%;
     }
     .reviews__block .block__, .reviews__block .block__1, .reviews__block .block__3 {
         padding: 15px;
@@ -937,11 +937,9 @@ form {
         height: 30%;
         right: 0;
     }
-    .case__box, .box__check {
-        width: 100%;
-    }
     .case__box .box__check {
         flex-direction: column;
+        width: 100%;
     }
     .case__box .box__check .check {
         margin-bottom: 0;
@@ -1068,6 +1066,35 @@ form {
     }
     .footer .email {
         order: 4;
+    }
+    .nav {
+        margin: 0 10%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo, .menu, .button__order, .contact {
+        width: 50%;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menu ul li {
+        width: 90px;
+        margin: 0 0 0 10px;
+    }
+    .slider .slider__title {
+        width: 100%;
     }
 }
  
