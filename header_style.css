@@ -60,6 +60,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
     .nav__menu nav {
         order: 3;
