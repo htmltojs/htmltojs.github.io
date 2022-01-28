@@ -1,0 +1,53 @@
+*,
+*:before, 
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+div:first-child {
+    height: 400px;
+    width: 430px;
+    margin: 0 auto;
+    background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+    background: -moz-repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+    background: -webkit-repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+}
+
+a {
+    display: inline-block;
+    height: 40px;
+    width: 140px;
+    padding: 10px 5px;
+    line-height: 20px;
+    text-align: center;
+}
+
+a[href*="htmlweb"] {
+    color: blueviolet;
+}
+
+a[href*="htmlweb"]:first-child {
+    background: radial-gradient(farthest-corner at 50% 100%, rgb(255, 255, 255) 0%, rgb(51, 238, 98) 100%);
+    border-radius: 6px;
+}
+
+a[href*="/css"]:nth-of-type(2):hover {
+    border: inset 5px red;
+    border-radius: 50px 20px / 5px 20px;
+    transition: .1s ease-in-out;
+    padding: 5px;
+}
+
+a ~ a:hover {
+    color: yellow;
+}
+
+a:last-of-type::selection {
+    font-weight: 900;
+    color: red;
+    background: green;
+}
