@@ -33,15 +33,16 @@ li {
 }
 
 ul {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 p, q {
+    width: 500px;
     font-family: 'Dongle', sans-serif;
     font-style: italic;
     font-size: 30px;
 }
 
 q {
-    float: right;
+    text-align: right;
 }
