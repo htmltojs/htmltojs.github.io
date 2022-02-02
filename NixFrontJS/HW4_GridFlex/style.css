@@ -121,6 +121,12 @@ body {
     grid-row: 4 / 5;
 }
 
+.github_link {
+    width: 150px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
 
     .flexbox__box2 {
