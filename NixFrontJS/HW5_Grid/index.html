@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Вариант 1</h1>
+    <div class="container-1">
+        <div class="grid__box-1"><p>A</p></div>
+        <div class="grid__box-2"><p>B</p></div>
+        <div class="grid__box-3"><p>C</p></div>
+        <div class="grid__box-4"><p>D</p></div>
+        <div class="grid__box-5"><p>E</p></div>
+        <div class="grid__box-6"><p>F</p></div>
+        <div class="grid__box-7"><p>G</p></div>
+        <div class="grid__box-8"><p>H</p></div>
+        <div class="grid__box-9"><p>I</p></div>
+        <div class="grid__box-10"><p>J</p></div>
+        <div class="grid__box-11"><p>K</p></div>
+        <div class="grid__box-12"><p>L</p></div>
+    </div>
+    <div class="box__code">
+        <h3>Code</h3>
+<pre><code>.container-1 
+{
+display: grid;
+grid-template-columns: 1fr 1fr 
+minmax(100px, 1fr); 
+grid-template-rows: 
+repeat(4, minmax(50px, 1fr));
+grid-gap: 10px;
+}
+
+.grid__box-1, .grid__box-2, 
+.grid__box-3, .grid__box-4, 
+.grid__box-5, .grid__box-6,
+.grid__box-7, .grid__box-8, 
+.grid__box-9, .grid__box-10, 
+.grid__box-11, .grid__box-12 
+{height: 150px;}
+
+.grid__box-1, .grid__box-2, 
+.grid__box-3, .grid__box-4, 
+.grid__box-5, .grid__box-6,
+.grid__box-7, .grid__box-8, 
+.grid__box-9 
+{width: 50%;}
+
+.grid__box-1, .grid__box-2, 
+.grid__box-3 
+{justify-self: end;}
+
+.grid__box-4, .grid__box-5, 
+.grid__box-6 
+{justify-self: start;}
+
+.grid__box-7, .grid__box-8, 
+.grid__box-9 
+{justify-self: center;}
+
+.grid__box-10, .grid__box-11, 
+.grid__box-12 
+{width: 100%;
+justify-self: stretch;}
+</code></pre>
+</div>
+</div>
+<div class="container">
+    <h1>Вариант 2</h1>
+    <div class="container-2">
+        <div class="cont_grid__box-1">A</div>
+        <div class="cont_grid__box-2">B</div>
+        <div class="cont_grid__box-3">C</div>
+        <div class="cont_grid__box-4">D</div>
+        <div class="cont_grid__box-5">E</div>
+        <div class="cont_grid__box-6">F</div>
+        <div class="cont_grid__box-7">G</div>
+        <div class="cont_grid__box-8">H</div>
+        <div class="cont_grid__box-9">I</div>
+        <div class="cont_grid__box-10">J</div>
+        <div class="cont_grid__box-11">K</div>
+        <div class="cont_grid__box-12">L</div>
+    </div>
+    <div class="box__code">
+        <h3>Code</h3>
+        <pre><code>
+.container-2 
+{
+display: grid;
+grid-template-columns: 
+1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
+minmax(50px, 1fr);
+grid-template-rows: 
+1fr 1fr 1fr 1fr 1fr 1fr 1fr 
+minmax(50px, 1fr);
+grid-gap: 10px;
+}
+
+.cont_grid__box-1 
+{grid-column: 3 / 5; grid-row: 1 / 3;}
+.cont_grid__box-2 
+{grid-column: 7 / 9; grid-row: 1 / 3;}
+.cont_grid__box-3 
+{grid-column: 11 / 13; grid-row: 1 / 3;}
+.cont_grid__box-4 
+{grid-column: 1 / 3; grid-row: 3 / 5;}
+.cont_grid__box-5 
+{grid-column: 5 / 7; grid-row: 3 / 5;}
+.cont_grid__box-6 
+{grid-column: 9 / 11; grid-row: 3 / 5;}
+.cont_grid__box-7 
+{grid-column: 2 / 4; grid-row: 5 / 7;}
+.cont_grid__box-8 
+{grid-column: 6 / 8; grid-row: 5 / 7;}
+.cont_grid__box-9 
+{grid-column: 10 / 12; grid-row: 5 / 7;}
+.cont_grid__box-10 
+{grid-column: 1 / 5; grid-row: 7 / 9;}
+.cont_grid__box-11 
+{grid-column: 5 / 9; grid-row: 7 / 9;}
+.cont_grid__box-12 
+{grid-column: 9 / 13; grid-row: 7 / 9;}
+</code></pre>
+    </div>
+</div>
+<div class="container">
+    <h1>Задача 2</h1>
+    <div class="container-3">
+        <div class="box__item-1 span-col-2"><p>A</p></div>
+        <div class="box__item-2"><p>B</p></div>
+        <div class="box__item-3"><p>C</p></div>
+        <div class="box__item-4"><p>D</p></div>
+        <div class="box__item-5"><p>E</p></div>
+        <div class="box__item-6"><p>F</p></div>
+        <div class="box__item-7 span-col-2 span-row-2"><p>G</p></div>
+        <div class="box__item-8"><p>H</p></div>
+        <div class="box__item-9"><p>I</p></div>
+        <div class="box__item-10"><p>J</p></div>
+        <div class="box__item-11 span-col-3"><p>K</p></div>
+        <div class="box__item-12"><p>L</p></div>
+        <div class="box__item-13"><p>M</p></div>
+    </div>
+</div>
+<div class="container">
+    <h1>Задача 3</h1>
+    <div class="container-4">
+        <div class="grbox-A grbox">A</div>
+        <div class="grbox-B grbox">B</div>
+        <div class="grbox-C grbox">C</div>
+        <div class="grbox-D grbox">
+            <div class="grbox__E grbox_white">E</div>
+            <div class="grbox__F grbox_white">F</div>
+            <div class="grbox__G grbox_white">G</div>
+        </div>
+    </div>
+</div>
+
+<div class="github_link">
+    <a target="_blank" href="https://github.com/htmltojs/htmltojs.github.io/tree/master/NixFrontJS/HW4_GridFlex">GridFlex_GitHub</a>
+    <a target="_blank" href="https://htmltojs.github.io/NixFrontJS/index.html">All My Home Work</a>
+</div>
+</body>
+</html>
