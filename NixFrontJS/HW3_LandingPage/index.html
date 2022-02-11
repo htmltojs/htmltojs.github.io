@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    
+    <title>LandingPage</title>
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header>
+    <nav class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Web.com.ua</a></li>
+            <li><a class="menu__item" href="#about">О нас</a></li>
+            <li><a class="menu__item" href="#slide">Слайдер</a></li>
+            <li><a class="menu__item" href="#accord">Аккордеон</a></li>
+            <li><a class="menu__item" href="#form">Форма</a></li>
+            <li><a class="menu__item" href="#footer">Подвал</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="scroll-indicator"></div>
+
+<main>
+
+    <section id="about">
+        <div class="aboutme">
+            <h2>| О нас |</h2>
+            <p>Какой-то текст описание. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae incidunt, nam voluptatem veritatis possimus magni laudantium vel sunt delectus quos, placeat accusamus numquam, optio eum omnis repellat earum?
+            A at voluptate nobis aut quibusdam sunt aspernatur iure eaque, ad qui soluta cupiditate animi culpa repudiandae quas officia? Voluptate ipsa odio eligendi quia rem rerum veniam sapiente, hic ea!
+            Expedita, quia. Voluptatibus praesentium in possimus dolorum unde, velit tempore laborum esse nesciunt incidunt consectetur nihil saepe eligendi assumenda qui voluptas adipisci eos quas vitae, vel minima consequatur quam dolorem?</p>
+            <p>Какой-то текст описание. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae incidunt, nam voluptatem veritatis possimus magni laudantium vel sunt delectus quos, placeat accusamus numquam, optio eum omnis repellat earum?
+                A at voluptate nobis aut quibusdam sunt aspernatur iure eaque, ad qui soluta cupiditate animi culpa repudiandae quas officia? Voluptate ipsa odio eligendi quia rem rerum veniam sapiente, hic ea!
+                Expedita, quia. Voluptatibus praesentium in possimus dolorum unde, velit tempore laborum esse nesciunt incidunt consectetur nihil saepe eligendi assumenda qui voluptas adipisci eos quas vitae, vel minima consequatur quam dolorem?</p>
+        </div>
+    </section>
+
+    <section id="slide">
+        <div class="all_sliders">
+            <h2>| Слайдер на чистом CSS |</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti repudiandae hic labore nobis eaque quis asperiores impedit libero ipsam velit quod, debitis, consectetur mollitia accusantium fugiat modi ratione sit.</p>
+            <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2">
+                        <input type="radio" name="slider" id="switch3">
+                        <input type="radio" name="slider" id="switch4">
+                        <input type="radio" name="slider" id="switch5">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="./img/1.jpg"></article>
+                                <article><img src="./img/2.jpg"></article>
+                                <article><img src="./img/3.jpg"></article>
+                                <article><img src="./img/4.jpg"></article>
+                                <article><img src="./img/5.jpg"></article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                </article>
+        </div>
+    </section>
+
+    <section id="accord">
+        <h2>| Аккордеон на чистом CSS |</h2>
+        
+        <div class="accordion horizontal">
+            <ul>
+                <li>
+                    <input type="radio" id="vert-1" name="vert-accordion" checked="checked" />
+                    <label for="vert-1">
+                        <div class="label_block">
+                            <div class="svg_block">
+                                <svg>
+                                    <polygon points="0,0 25,25 0,50 0,40 15,25 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                    <polygon points="0,10 15,25 0,40 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                </svg>
+                            </div>
+                            <div class="block_text"><p>CSS practice</p></div>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <h3>This is an example accordion item</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" id="vert-2" name="vert-accordion" />
+                    <label for="vert-2">
+                        <div class="label_block">
+                            <div class="svg_block">
+                                <svg>
+                                    <polygon points="0,0 25,25 0,50 0,40 15,25 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                    <polygon points="0,10 15,25 0,40 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                </svg>
+                            </div>
+                            <div class="block_text"><p>CSS practice</p></div>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <h3>Totally another one right here</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" id="vert-3" name="vert-accordion" />
+                    <label for="vert-3">
+                        <div class="label_block">
+                            <div class="svg_block">
+                                <svg>
+                                    <polygon points="0,0 25,25 0,50 0,40 15,25 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                    <polygon points="0,10 15,25 0,40 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                </svg>
+                            </div>
+                            <div class="block_text"><p>CSS practice</p></div>
+                        </div></label>
+                    <div class="content">
+                        <h3>I think I can go on forever</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" id="vert-4" name="vert-accordion" />
+                    <label for="vert-4">
+                        <div class="label_block">
+                            <div class="svg_block">
+                                <svg>
+                                    <polygon points="0,0 25,25 0,50 0,40 15,25 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                    <polygon points="0,10 15,25 0,40 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                </svg>
+                            </div>
+                            <div class="block_text"><p>CSS practice</p></div>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <h3>I was wrong, I'm done</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" id="vert-5" name="vert-accordion" />
+                    <label for="vert-5">
+                        <div class="label_block">
+                            <div class="svg_block">
+                                <svg>
+                                    <polygon points="0,0 25,25 0,50 0,40 15,25 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                    <polygon points="0,10 15,25 0,40 0,10" stroke-width="0" stroke="rgb(0,0,0)"/>
+                                </svg>
+                            </div>
+                            <div class="block_text"><p>CSS practice</p></div>
+                        </div>
+                    </label>
+                    <div class="content">
+                        <h3>I was wrong, I'm done</h3>
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="form">
+        <div id="content">
+            <h1>Обратная связь</h1>
+            <form action=" " method="post"  autocomplete="on">
+                <p> <label for="username" >Имя<span class="required">*</span></label> 
+                    <input type="text" name="username" id="username"  required="required" placeholder="Привет друг, как твоё имя?"  /> </p>
+                <p> <label for="usermail" >E-mail адрес <span class="required">*</span></label> 
+                    <input type="email" name="usermail" id="usermail" placeholder="Обещаю, я ненавижу спам так же сильно, как и вы" required="required" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+[.]+[a-z]*$"/> </p>
+                <p> <label for="usersite" >Сайт</label> 
+                    <input type="url" name="usersite" id="usersite"  placeholder="Пример: http://www.miste.com" /> </p>
+                <p> <label for="usersite" >Мобильный телефон<span class="required">*</span></label> 
+                <input type="tel" name="usernumber" id="usersite" list="tel-list" required="required"  placeholder="+38 (060) 123-45-67" pattern="\+38\s?[\(]{0,1}0[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></p>
+                    <datalist id="tel-list">
+                    <option value="+38 (060) 123-45-67" label="Телефонный номер №1">
+                    <option value="+38 (060) 123-45-68" label="Телефонный номер №2">
+                    </datalist>
+                <p> <label for="subject" >Вопрос</label> 
+                    <input type="text" name="subject" id="subject"  placeholder="О чем бы вы хотели поговорить?" /> </p>
+                <p> <label for="subject" >В какое время перезвонить?</label> 
+                    <input type="datetime-local" name="datetime-local-x"></p>
+                <p> <label for="message" >Сообщение<span class="required">*</span></label> 
+                    <textarea placeholder="Не стесняйтесь, напишите мне дружеское сообщение, и я отвечу как можно скорее"  required="required" ></textarea> </p>
+                <p class="indication"> Все поля с <span class="required">*</span> обязательны для заполнения</p>
+                <div class="button_box">
+                    <input type="reset" value="Сброс данных" /> 
+                    <input type="submit" value="Отправить сообщение!" />
+                </div>      
+            </form>                             
+        </div>
+    </section>
+
+</main>
+
+<footer id="footer">
+        <span class="sub">© Все права защищены <a href="https://htmltojs.github.io/NixFrontJS/HW3_LandingPage/index.html">Моим Желанием</a> 2022</span>
+</footer>
+
+
+</body>
+</html>
