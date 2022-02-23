@@ -66,16 +66,16 @@ averages([1, 3, 5, 1, -10]);
 // Задача 6
 // Число в массиве, вернуть его в число не смог.
 function numbs(n) {
-    let maxNumb = String(n).split('').sort((a, b) => b - a).map(Number);
+    let maxNumb = String(n).split('').sort((a, b) => b - a).map(Number).join(''); // забыл сразу добавить .join('')
     return maxNumb;
-  };
-  
-  console.log(numbs(35231));
-  
-  // Вариант работает только если указывать что число это строка
-  const numb = str => str.split('').sort((a, b) => (b - a)).join('');
-  console.log(numb('124564'));
+};
 
+console.log(numbs(35231));
+
+// Вариант работает только если указывать что число это строка
+// не понял сразу как перевести в число строку, всего лишь нужно было добавить parseInt() или +();
+const numb = str => parseInt(str.toString().split('').sort((a, b) => (b - a)).join(''));
+console.log(numb(124564));
 
 // Задача 7
 const scores = {"A": 100, "B": 14, "C": 9, "D": 28, "E": 145, "F": 12, "G": 3,
@@ -116,7 +116,7 @@ function removeABC(str) {
 
     let array = str.split('').includes('a') || str.includes('b') || str.includes('c');
     if (array === false) {
-        console.log(null);
+        console.log(null); // не сразу понял как, но решение простое return null;
     } else {
         let result = str.replace(/a+/g, '').replace(/b+/g, '').replace(/c+/g, '');
         console.log(result);
