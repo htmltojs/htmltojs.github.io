@@ -67,7 +67,7 @@ averages([1, 3, 5, 1, -10]);
 // Число в массиве, вернуть его в число не смог.
 function numbs(n) {
     let maxNumb = String(n).split('').sort((a, b) => b - a).map(Number).join(''); // забыл сразу добавить .join('')
-    return maxNumb;
+    return parseInt(maxNumb); // а тут забыл сразу перевести строку в число с помощью parseInt()
 };
 
 console.log(numbs(35231));
