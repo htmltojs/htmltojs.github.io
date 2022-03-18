@@ -527,11 +527,11 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .likes {padding: 74px 20%;}
-    .likes__box {width: 273px;}
+    .likes {padding: 74px 18%;}
+    .likes__box {width: calc(95%/3);}
 }
 
-@media (min-width: 1000px) and (max-width: 1199px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
     .header, .slider {width: 100%; padding: 0 70px;}
     .articles, .content, .news, .comments {width: 1000px; padding: 0 10%;}
     .post {width: 48%;}
