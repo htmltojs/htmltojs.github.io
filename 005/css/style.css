@@ -43,7 +43,8 @@ ul {list-style: none;}
 
 .header__logo, .header__nav, .article__category,
 .article__comment, .post__category, .likes__subtitle,
-.comments__subtitle, .comment__reply, .topposts__comments {
+.comments__subtitle, .comment__reply, .topposts__comments,
+.article__share {
     text-transform: uppercase;
 }
 
@@ -72,8 +73,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: 40px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 62px;
+    margin-bottom: 62px;
 }
 
 .header__logo a {
@@ -126,7 +127,7 @@ body {
 
 .slider {
     height: 509px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 }
 /* Slider */
 .swiper {
@@ -163,15 +164,17 @@ body {
 
 .articles {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 132px;
 }
 
-.article__category {margin-bottom: 25px;}
+.article__category {margin-bottom: 18px;}
 
-.article__title {margin-bottom: 35px;}
+.article__title {margin-bottom: 28px;}
+
+.article__title h1 a {letter-spacing: 1px;}
 
 .article__text {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     line-height: 24px;
 }
 
@@ -189,6 +192,11 @@ body {
     padding: 0 20px;
 }
 
+.articles blockquote {
+    margin-top: -14px;
+    margin-bottom: -8px;
+}
+
 .article__share ul {
     display: flex;
     flex-direction: row;
@@ -198,7 +206,14 @@ body {
 .article__share ul li {
     display: inline-block;
     margin-right: 15px;
+    font-family: var(--body-font-ub-light);
+    color: var(--color-2);
+    line-height: 20px;
 }
+
+.article__share ul li a {color: var(--color-2);}
+
+.article__share ul li a:hover {color: var(--color-1);}
 
 .article__share ul li:last-child {margin-right: 0;}
 
@@ -227,17 +242,17 @@ body {
     margin-bottom: 130px;
 }
 
-.post__img, .post__title {margin-bottom: 30px;}
+.post__img, .post__title {margin-bottom: 24px;}
 
-.post__category {margin-bottom: 25px;}
+.post__category {margin-bottom: 18px;}
 
-.post__text p {
-    line-height: 24px;
-}
+.post__text p {line-height: 25px;}
+
+.post__title h1 a {letter-spacing: 1px;}
 
 .signup {
     height: 287px;
-    margin-top: 60px;
+    margin-top: -14px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -245,17 +260,19 @@ body {
     align-items: center;
 }
 
-.signup__title {margin-bottom: 75px;}
+.signup__title {margin-bottom: 69px;}
+
+.signup__title h1 {letter-spacing: 2px;}
 
 .signup__input {
     position: relative;
-    height: 35px;
-    border-bottom: 2px solid #000;
+    height: 38px;
+    border-bottom: 1px solid #000;
 }
 
 .signup__input form input {
-    width: 368px;
-    height: 35px;
+    width: 400px;
+    height: 38px;
     border: none;
     background: none;
     outline: none;
@@ -273,7 +290,7 @@ body {
     cursor: pointer;
 }
 
-.news {margin-top: 100px;}
+.news {margin-top: 107px;}
 
 .news__button {
     width: 100%;
@@ -281,14 +298,13 @@ body {
 }
 
 .news__button button {
-    margin: 0 auto;
-    padding: 15px 32px;
+    margin: 32px auto 0;
+    padding: 15px 33px;
     font-family: var(--body-font-pf-regular);
     font-size: 20px;
     background: none;
     border: 1px solid var(--color-1);
     color: var(--color-1);
-
     cursor: pointer;
 }
 
@@ -302,13 +318,13 @@ body {
 .footer {
     height: 97px;
     background-color: #f0f0f0;
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 .footer__container {
     height: 97px;
     margin: 0 auto;
-    width: 1200px;
+    width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -327,8 +343,8 @@ body {
 .footer__follow ul li:last-child {margin-right: 0;}
 
 .footer__follow ul li a svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: var(--color-1);
     margin-bottom: -5px;
 }
@@ -344,7 +360,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    padding: 74px 310px;
 }
 
 .likes__subtitle {
@@ -356,9 +371,7 @@ body {
 
 .likes__subtitle a:hover {color: var(--color-0);}
 
-.likes__box {width: 273px;}
-
-.like__img {margin-bottom: 25px;}
+.like__img {margin-bottom: 14px;}
 
 .like__img img {width: 100%;}
 
@@ -455,9 +468,9 @@ body {
 }
 
 .sidebar {
-    width: 272px;
+    width: 412px;
     margin-right: 70px;
-    margin-top: 50px;
+    margin-top: 52px;
     margin-bottom: 20px;
     position: -webkit-sticky;
     position: sticky;
@@ -465,14 +478,19 @@ body {
     align-self: flex-start
 }
 
-.sidebar__about {margin-bottom: 38px;}
+.sidebar__about {margin-bottom: 34px;}
 
 .sidebar__about img {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
-.sidebar__about h2, .sidebar__about p {margin-bottom: 20px;}
+.sidebar__about h2 {
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.sidebar__about p {margin-bottom: 16px;}
 
 .sidebar__about p {
     font-size: var(--small-font-size);
@@ -480,14 +498,15 @@ body {
 }
 
 .sidebar__share {
-    margin-top: 30px;
     display: flex;
     justify-content: left;
+    margin-bottom: 50px;
 }
 
 .sidebar__topposts ul li {
     display: flex;
     flex-direction: row;
+    margin-top: 24px;
     margin-bottom: 20px;
 }
 
@@ -508,8 +527,8 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .likes {padding: 74px 10%;}
-    .likes__box {width: calc(95%/3);}
+    .likes {padding: 74px 20%;}
+    .likes__box {width: 273px;}
 }
 
 @media (min-width: 1000px) and (max-width: 1199px) {
