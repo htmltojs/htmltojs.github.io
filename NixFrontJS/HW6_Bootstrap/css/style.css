@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.box1 {
+  background-color: #ff0;
+}
+
+.nav {
+  height: 80px;
+}
+
+.box1 {
+  background-color: #496FDB;
+  height: 100vh;
+}
+
+.box2 {
+  background-color: #F8F9FC;
+}
+.box2 .boxinfo {
+  height: 100px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 39px 0px rgba(34, 60, 80, 0.2);
+  border: 2px solid #e9e9e9;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.box2 .boxinfo p.boxinfo__title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.box2 .boxinfo .col-10, .box2 .boxinfo .col-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.box2 .boxinfo img {
+  width: 100%;
+  height: 40px;
+  background-color: #0f0;
+}
+.box2 .boxinfo .boxinfo__price {
+  font-size: 1.5rem;
+}
+.box2 .boxinfo .boxinfo__rating {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  height: 8px;
+  background: #e9e9e9;
+  border-radius: 4px;
+}
+.box2 .col:nth-child(1) .boxinfo__title {
+  color: #6385E3;
+}
+.box2 .col:nth-child(2) .boxinfo__title {
+  color: #72CC9A;
+}
+.box2 .col:nth-child(3) .boxinfo__title {
+  color: #55BBCD;
+}
+.box2 .col:nth-child(4) .boxinfo__title {
+  color: #F6C360;
+}
+
+.main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+}
+.main__list .list {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #e9e9e9;
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 39px 0px rgba(34, 60, 80, 0.2);
+}
+.main__list .list h2 {
+  background: #F8F9FC;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #6385E3;
+}
+.main__list .list ul {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.main__list .list ul li {
+  position: relative;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main__list .list ul li:last-child {
+  border-bottom: none;
+}
+.main__list .list ul li label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  height: 40px;
+  margin-bottom: 0;
+}
+.main__list .list ul li label input {
+  visibility: hidden;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.main__list .list ul li label input:checked ~ .list__text p {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.main__list .list ul li label input:checked ~ span {
+  background: #03a9f4;
+  border: 1px solid #03a9f4;
+}
+.main__list .list ul li label input:checked ~ span:before {
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.main__list .list ul li label .list__text {
+  position: absolute;
+}
+.main__list .list ul li label .list__text p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.main__list .list ul li label .list__text p.text__time {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.main__list .list ul li label span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__list .list ul li label span:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.footer {
+  height: 50px;
+}
+.footer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
