@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
@@ -47,7 +45,8 @@ body {
     color: black;
 }
 
-.contact, .contact__box {
+.contact,
+.contact__box {
     display: flex;
     flex-direction: row;
 }
@@ -132,7 +131,6 @@ p {
     font-size: 1.1em;
     margin-bottom: 20px;
 }
-
 
 .aboutUs__img {
     width: 50%;
@@ -300,7 +298,8 @@ p {
     bottom: 0;
 }
 
-.case__box, .form {
+.case__box,
+.form {
     z-index: 1;
 }
 
@@ -402,8 +401,8 @@ p {
     line-height: 2em;
 }
 
-
-input[type=text], input[type=tel] {
+input[type=text],
+input[type=tel] {
     width: 367px;
     height: 48px;
     border-radius: 5px;
@@ -518,7 +517,8 @@ form {
     justify-content: space-between;
 }
 
-.reviews__block .block__1, .reviews__block .block__3 {
+.reviews__block .block__1,
+.reviews__block .block__3 {
     height: 320px;
     width: 260px;
     background-color: #2E2E2E;
@@ -534,7 +534,8 @@ form {
     height: 20px;
 }
 
-.arrow__left, .arrow__right {
+.arrow__left,
+.arrow__right {
     width: 41px;
 }
 
@@ -542,14 +543,15 @@ form {
     color: #fff;
     font-size: 1em;
     line-height: 1.5em;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.reviews__block .block__1 p, .reviews__block .block__3 p {
+.reviews__block .block__1 p,
+.reviews__block .block__3 p {
     color: #fff;
     font-size: .9em;
     line-height: 1.3em;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .block .block__name {
@@ -567,7 +569,7 @@ form {
 }
 
 .block .block__name p {
-    margin: 0 auto; 
+    margin: 0 auto;
     font-weight: 500;
 }
 
@@ -579,7 +581,7 @@ form {
 }
 
 .reviews__hr .horizon__hr1,
-.reviews__hr .horizon__hr2, 
+.reviews__hr .horizon__hr2,
 .reviews__hr .horizon__hr3 {
     width: 32px;
     height: 2px;
@@ -716,7 +718,6 @@ form {
     line-height: 1.5em;
 }
 
-
 .video__video {
     width: 50%;
 }
@@ -755,7 +756,8 @@ form {
     padding-right: 2%;
 }
 
-.video__arrow .arrow__left, .video__arrow .arrow__right {
+.video__arrow .arrow__left,
+.video__arrow .arrow__right {
     margin: 5px;
 }
 
@@ -829,8 +831,10 @@ form {
     margin-right: 5px;
 }
 
+
 /* DESKTOP 1150px*/
-@media only screen and (min-width : 1024px) and (max-width: 1420px) {
+
+@media only screen and (min-width: 1024px) and (max-width: 1420px) {
     .nav {
         height: 100px;
         padding: 1% 0;
@@ -851,7 +855,9 @@ form {
     .case__box .box__check {
         width: 100%;
     }
-    .reviews__block .block__, .reviews__block .block__1, .reviews__block .block__3 {
+    .reviews__block .block__,
+    .reviews__block .block__1,
+    .reviews__block .block__3 {
         padding: 15px;
     }
     .block .block__name img {
@@ -890,7 +896,9 @@ form {
     .aboutUs__text {
         order: 2;
     }
-    .aboutUs__text, .text__us, .aboutUs__img {
+    .aboutUs__text,
+    .text__us,
+    .aboutUs__img {
         width: 100%;
     }
     .aboutUs__text .bottom {
@@ -954,14 +962,16 @@ form {
         flex-direction: column;
         margin: 0 15%;
     }
-    .form .form__text, .form .form__text p {
+    .form .form__text,
+    .form .form__text p {
         width: 100%;
     }
     .form__input {
         width: 100%;
         margin: 0 auto;
     }
-    .form__input form, .form__input form a {
+    .form__input form,
+    .form__input form a {
         width: 100%;
         margin: 0 auto;
     }
@@ -992,7 +1002,8 @@ form {
         flex-direction: column;
         justify-content: space-between;
     }
-    .reviews__block .block__1, .reviews__block .block__3  {
+    .reviews__block .block__1,
+    .reviews__block .block__3 {
         height: 320px;
         width: 260px;
         background-color: #2E2E2E;
@@ -1002,7 +1013,8 @@ form {
         flex-direction: column;
         justify-content: space-between;
     }
-    .reviews__block .block__1, .reviews__block .block__3  {
+    .reviews__block .block__1,
+    .reviews__block .block__3 {
         margin-top: 1.5%;
     }
     .block {
@@ -1036,7 +1048,8 @@ form {
         flex-wrap: nowrap;
         height: 100%;
     }
-    .video__text, .video__video {
+    .video__text,
+    .video__video {
         width: 100%;
     }
     .video__video {
@@ -1051,7 +1064,10 @@ form {
     .footer {
         flex-wrap: wrap;
     }
-    .footer .footer__img, .footer .callnumber, .footer .navmenu, .footer .email {
+    .footer .footer__img,
+    .footer .callnumber,
+    .footer .navmenu,
+    .footer .email {
         width: 50%;
     }
     .footer .footer__img {
@@ -1081,7 +1097,10 @@ form {
     .content {
         margin-top: 67px;
     }
-    .logo, .menu, .button__order, .contact {
+    .logo,
+    .menu,
+    .button__order,
+    .contact {
         width: 50%;
     }
     .contact {
@@ -1103,7 +1122,7 @@ form {
         width: 100%;
     }
 }
- 
+
 
 /*@media only screen and (max-width: 1420px) {
 

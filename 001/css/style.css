@@ -3,7 +3,6 @@ font-family: 'Bebas Neue', cursive;
 font-family: 'Montserrat', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Quicksand:wght@500&display=swap');
-
 body {
     margin: 0;
     font-style: 14px;
@@ -23,16 +22,20 @@ a {
     text-decoration: none;
 }
 
+
 /* Conteiner */
+
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-} 
+}
+
 
 /* Header */
+
 .header {
-    margin-top: 75px;
+    margin-top: 20px;
     padding: 0;
     position: absolute;
     left: 0;
@@ -69,6 +72,7 @@ a {
 
 
 /* Nav */
+
 .nav {
     font-size: 1.3em;
     font-weight: 500;
@@ -90,11 +94,12 @@ a {
     opacity: 1;
 }
 
+
 /* Intro */
+
 .intro {
     height: 825px;
-    background: #FFC649
-    url('../img/bg.png') center / cover;
+    background: #FFC649 url('../img/bg.png') center / cover;
     padding-top: 162px;
 }
 
@@ -118,7 +123,8 @@ a {
     width: 405px;
 }
 
-.intro__h1 h1, h3 {
+.intro__h1 h1,
+h3 {
     text-transform: uppercase;
     text-shadow: 3px 5px 0 #fee8bb;
     letter-spacing: 2px;
@@ -179,7 +185,9 @@ a {
     font-family: 'Bebas Neue', cursive;
 }
 
+
 /* NEWS */
+
 .news {
     height: 569px;
     position: relative;
@@ -239,7 +247,9 @@ a {
     margin-right: 96px;
 }
 
+
 /* CHOICE */
+
 .choice h6 {
     background-color: #ffc045;
     width: 218px;
@@ -274,6 +284,7 @@ a {
     margin-left: 30px;
     margin-right: 30px;
 }
+
 .menu {
     width: 350px;
     height: 700px;
@@ -316,13 +327,15 @@ a {
     color: #ffc045;
 }
 
+
 /* SLIDER */
+
 .slider__box {
     width: 1294px;
     height: 492px;
     margin: 38px auto;
     display: flex;
-    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
 }
 
 .slider__text {
@@ -382,13 +395,13 @@ a {
     padding: 24px 20px;
 }
 
+
 /* RESERVATION */
+
 .reservation {
     height: 680px;
-    background: url('../img/Burger_plate.png') 0 -15px no-repeat, 
-    url('../img/Bottle.png') 144px 205px no-repeat,
-    url('../img/Plate.png') right 100px no-repeat;
-padding-top: 87px;
+    background: url('../img/Burger_plate.png') 0 -15px no-repeat, url('../img/Bottle.png') 144px 205px no-repeat, url('../img/Plate.png') right 100px no-repeat;
+    padding-top: 87px;
 }
 
 .reservation__box p.h4 {
@@ -446,25 +459,41 @@ form input::placeholder {
     letter-spacing: 1px;
 }
 
-::-webkit-input-placeholder {font-family: 'Bebas Neue', cursive; font-size: 1.2em;}
-::-moz-placeholder {font-family: 'Bebas Neue', cursive; font-size: 1.2em;}
-:-ms-input-placeholder {font-family: 'Bebas Neue', cursive; font-size: 1.2em;}
-:-moz-placeholder {font-family: 'Bebas Neue', cursive; font-size: 1.2em;}
+::-webkit-input-placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
+::-moz-placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
+:-ms-input-placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
+:-moz-placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
 
 .button:hover {
     cursor: pointer;
     color: #ffc045;
 }
 
+
 /* FOOTER */
+
 .footer {
-    background: #000000
-    url('../img/footer_img.png') center / cover;
+    background: #000000 url('../img/footer_img.png') center / cover;
     height: 525px;
     width: 1326px;
     margin: 14px auto 66px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -582,12 +611,18 @@ form input::placeholder {
     border: 1px solid #ffc045;
 }
 
+
 /* DESKTOP 1431px*/
+
 @media only screen and (max-width: 1431px) {
-    .header, .intro, .container, .choice, .slider, .reservation {
+    .header,
+    .intro,
+    .container,
+    .choice,
+    .slider,
+    .reservation {
         display: none;
     }
-
     .mobile {
         display: flex;
         justify-content: center;
@@ -596,7 +631,6 @@ form input::placeholder {
         height: 90vh;
         margin: 0 50px;
     }
-
     .mobile p {
         font-size: 2em;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

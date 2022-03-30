@@ -6,14 +6,13 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Quicksand:wght@500&display=swap');
-
 *,
-*:before, 
+*:before,
 *:after {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,6 +20,9 @@ body {
     background-color: rgb(36, 34, 34);
 }
 
+a {
+    text-decoration: none;
+}
 
 .about {
     display: flex;
@@ -41,7 +43,7 @@ li {
     width: 25px;
     height: 25px;
     margin: 3px;
-} 
+}
 
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -106,11 +108,11 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding: 20px;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -119,11 +121,11 @@ p {
 
 .card:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
-            box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
     -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-            transform: scale(1.02); 
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .card:nth-child(1),
@@ -138,22 +140,9 @@ p {
 .card:nth-child(10),
 .card:nth-child(11),
 .card:nth-child(12) {
-    background-image: -webkit-gradient(
-        linear,
-        left top, left bottom,
-        from(rgba(10,10,10,0)),
-        color-stop(50%, rgba(10,10,10,0)),
-        to(rgba(10,10,10,0.7))), url();
-    background-image: -o-linear-gradient(
-        top,
-        rgba(10,10,10,0) 0%,
-        rgba(10,10,10,0) 50%,
-        rgba(10,10,10,0.7) 100%), url();
-    background-image: linear-gradient(
-        to bottom,
-        rgba(10,10,10,0) 0%,
-        rgba(10,10,10,0) 50%,
-        rgba(10,10,10,0.7) 100%), url();
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(10, 10, 10, 0)), color-stop(50%, rgba(10, 10, 10, 0)), to(rgba(10, 10, 10, 0.7))), url();
+    background-image: -o-linear-gradient( top, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.7) 100%), url();
+    background-image: linear-gradient( to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.7) 100%), url();
 }
 
 .card:nth-child(1) {
@@ -204,20 +193,30 @@ p {
     background-image: url('./img/portfolio_img/012.jpg');
 }
 
-.card:nth-child(1), :nth-child(6), :nth-child(7), :nth-child(12) {
+.card:nth-child(1),
+ :nth-child(6),
+ :nth-child(7),
+ :nth-child(12) {
     -ms-grid-column: span 6;
-        grid-column-start: span 6;
+    grid-column-start: span 6;
 }
 
-.card:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(8), :nth-child(9), :nth-child(10), :nth-child(11) {
+.card:nth-child(2),
+ :nth-child(3),
+ :nth-child(4),
+ :nth-child(5),
+ :nth-child(8),
+ :nth-child(9),
+ :nth-child(10),
+ :nth-child(11) {
     -ms-grid-column: span 3;
-        grid-column-start: span 3;
+    grid-column-start: span 3;
 }
 
 @media screen and (max-width: 1200px) {
     .card:nth-child(n) {
         -ms-grid-column: span 6;
-            grid-column-start: span 6;
+        grid-column-start: span 6;
     }
     .feed {
         margin-top: 20px;
@@ -227,13 +226,12 @@ p {
 @media screen and (max-width: 800px) {
     .card:nth-child(n) {
         -ms-grid-column: span 12;
-            grid-column-start: span 12;
+        grid-column-start: span 12;
     }
     .about {
         display: flex;
         flex-direction: column;
     }
-    
     .about__contacts {
         width: 100%;
         margin-top: 10px;
@@ -244,8 +242,8 @@ p {
 }
 
 
-
 /* v2 */
+
 .hr_line {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -272,10 +270,14 @@ p {
     height: 30vh;
 }
 
-.gallery .gallery_box .box_img img {height: 30vh; width: 100%;}
+.gallery .gallery_box .box_img img {
+    height: 30vh;
+    width: 100%;
+}
 
-.gallery .gallery_box .box_img img:hover {opacity: .5;}
-
+.gallery .gallery_box .box_img img:hover {
+    opacity: .5;
+}
 
 .gallery .gallery_box .box_text {
     padding: 0px 10px;
@@ -285,8 +287,4 @@ p {
     font-size: .9em;
     line-height: 1em;
     color: #fff;
-}
-
-a {
-    text-decoration: none;
 }
