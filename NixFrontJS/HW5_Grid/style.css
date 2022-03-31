@@ -57,14 +57,7 @@ pre code {
 }
 
 
-.grid__box-1, .grid__box-2, .grid__box-3,
-.grid__box-4, .grid__box-5, .grid__box-6,
-.grid__box-7, .grid__box-8, .grid__box-9,
-.grid__box-10, .grid__box-11, .grid__box-12,
-.cont_grid__box-1, .cont_grid__box-2, .cont_grid__box-3,
-.cont_grid__box-4, .cont_grid__box-5, .cont_grid__box-6,
-.cont_grid__box-7, .cont_grid__box-8, .cont_grid__box-9,
-.cont_grid__box-10, .cont_grid__box-11, .cont_grid__box-12 {
+.container__box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,10 +108,7 @@ pre code {
     border: 1px solid #000;
 }
 
-.cont_grid__box-1, .cont_grid__box-2, .cont_grid__box-3,
-.cont_grid__box-4, .cont_grid__box-5, .cont_grid__box-6,
-.cont_grid__box-7, .cont_grid__box-8, .cont_grid__box-9,
-.cont_grid__box-10, .cont_grid__box-11, .cont_grid__box-12 {
+.container__box {
     border: 1px solid #000;
 }
 

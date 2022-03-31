@@ -202,6 +202,7 @@ console.log(calculateDifference({ "baseball bat": 20 }, 5));
 console.log(calculateDifference({ skate: 10, painting: 20 }, 19));
 console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400));
 
+
 // Задача 13 Что-то сложное, ещё вникаю.
 const left = (string) => {
     let a = string;
