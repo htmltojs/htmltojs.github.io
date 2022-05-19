@@ -757,6 +757,11 @@ h4 {
     .header__title a {
         padding: .5em 1em;
     }
+    
+    .footer__nav ul li a,
+    .main ul li a {
+        padding: 0 .5em;
+    }
 
     .about {
         height: 100%;
@@ -769,6 +774,10 @@ h4 {
 
     .about__item {
         flex-direction: column;
+    }
+    
+    .item__check {
+        justify-content: start;
     }
 
     .experience {
@@ -851,6 +860,7 @@ h4 {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
+        margin-top: 5vh;
     }
 
     .experience__box {
@@ -890,6 +900,10 @@ h4 {
     .feedback {
         height: 100%;
         margin-bottom: 10px;
+    }
+    
+    .feedback__title {
+        margin-top: 10%;   
     }
 
     .upButton {
