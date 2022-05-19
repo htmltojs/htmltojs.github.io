@@ -444,10 +444,12 @@ h4 {
     overflow: hidden;
 }
 
+#interest:target > .interest__box .interest__item-1,
 .interest:hover > .interest__box .interest__item-1 {
     animation-play-state: running;
 }
 
+#interest:target > .interest__box .interest__item-2,
 .interest:hover > .interest__box .interest__item-2 {
     animation-play-state: running;
 }
