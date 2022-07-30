@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: rgb(255, 255, 255);
+    border: 1px solid #000;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(162, 255, 0);
+}
+
+.progressBar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 5px;
+	background: linear-gradient(to right, #ff1313, #ff7171);
+	width: 0%;
+	z-index: 100;
+	transition: width 0.2s ease-out;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	background: rgb(117, 140, 255);
+}
+
+.light {
+    background: #fff;
+    color: #000;
+}
+
+.dark {
+    background: blue;
+    color: rgb(255, 255, 255);
+}
+
+.dark a {
+    color: #fff;
+}
+
+.dark a:hover {
+    color: rgb(162, 255, 0);
+}
+
+* {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
