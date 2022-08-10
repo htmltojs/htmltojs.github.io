@@ -8,70 +8,79 @@
 
     <!-- Подключаем CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scss/style.css">
 </head>
 <body>
     
     <div class="container-fluid">
         <div class="main row">
           <div class="box1 col-md-3"><!---Brand--->
-            <a href="" class="logo">
-              <img src="" alt="" class="logo__img">
+            <a href="" class="logo mt-2">
+              <img src="https://img.icons8.com/ios/50/000000/lol--v1.png"/>
               <h3 class="logo__h3">Brand</h3>
             </a>
             <ul>
-              <li><a href="#goals"><img src="" alt="">Goals</a></li>
-              <li><a href="#profile"><img src="" alt="">Profile</a></li>
-              <li><a href="#register"><img src="" alt="">Register</a></li>
+              <li><a href="#goals"><img src="https://img.icons8.com/ios/50/000000/speedometer.png"/>Goals</a></li>
+              <li><a href="#profile"><img src="https://img.icons8.com/ios-glyphs/30/000000/gender-neutral-user.png"/>Profile</a></li>
+              <li><a href="#register" data-toggle="modal" data-target="#exampleModal"><img src="https://img.icons8.com/material/24/000000/user-female-circle.png"/>Register</a></li>
             </ul>
           </div>
-          <div class="box2 col-md-9">
+          <div class="box2 col-md-9 ">
             <div class="nav row"><!---Search--->
-                <div class="col1 col-md-6">Search for ...</div>
-                <div class="col2 col-md-3">Col 2</div>
-                <div class="col3 col-md-3">Col 3</div>
+                <div class="search col col-md-5">Search for ... <img src="https://img.icons8.com/color/48/000000/search-more.png"/></div>
+                <div class="col2 col-md-4">
+                  <span class="ring col-md-6">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/bell--v1.png"/>
+                    <span class="mes">3+</span>
+                  </span>
+                  <span class="message col-md-6">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/mail.png"/>
+                    <span class="mes">7</span>
+                  </span>
+                </div>
+                <div class="col3 col-md-3">NIX Student <img src="https://images.barrons.com/im-565729?width=1280&size=1" alt="img"></div>
             </div>
-            <div class="goals">
+            <div class="goals mt-3" id="goals">
               <div class="row justify-content-between">
-                  <div class="goals__title col-1 col-md-2 col-sm-6"><h1>Goals</h1></div>
-                  <div class="goals__button col-2 col-md-2 col-sm-6"><button><img src="#" alt="">Generate Report</button></div>
+                  <div class="goals__title col-1 col-md-4 col-sm-6"><h1>Goals</h1></div>
+                  <button class="goals__button col-2 col-md-4 col-sm-6"><img src="https://img.icons8.com/material-outlined/24/000000/upload--v1.png"/>Generate Report</button>
               </div>
-                <div class="row row-cols-2">
-                  <div class="col">
-                    <div class="boxinfo mb-4 p-3 align-items-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="boxinfo mb-2 p-3 align-items-center">
                       <div class="boxinfo__text col-10">
                         <p class="boxinfo__title">Earnings (monthly)</p>
                         <span class="boxinfo__price">$40,000</span>
                       </div>
-                      <div class="boxinfo__icon col-2"><img src="" alt=""></div>
+                      <div class="boxinfo__icon col-2"><img src="https://img.icons8.com/ios/50/000000/timeline-week.png"/></div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="boxinfo mb-4 p-3 align-items-center">
+                  <div class="col-md-6">
+                    <div class="boxinfo mb-2 p-3 align-items-center">
                       <div class="boxinfo__text col-10">
                         <p class="boxinfo__title">Earnings (annual)</p>
                         <span class="boxinfo__price">$215,000</span>
                       </div>
-                      <div class="boxinfo__icon col-2"><img src="" alt=""></div>
+                      <div class="boxinfo__icon col-2"><img src="https://img.icons8.com/material-sharp/48/000000/us-dollar.png"/></div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="boxinfo mb-4 p-3 align-items-center">
+                  <div class="col-md-6">
+                    <div class="boxinfo mb-2 p-3 align-items-center">
                       <div class="boxinfo__text col-10">
                         <p class="boxinfo__title">Tasks</p>
                         <span class="boxinfo__price">50%</span>
                       </div>
                       <div class="boxinfo__rating"></div>
-                      <div class="boxinfo__icon col-2"><img src="" alt=""></div>
+                      <div class="boxinfo__icon col-2"><img src="https://img.icons8.com/ios/50/000000/task-planning.png"/></div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="boxinfo mb-4 p-3 align-items-center">
+                  <div class="col-md-6">
+                    <div class="boxinfo mb-2 p-3 align-items-center">
                       <div class="boxinfo__text col-10">
                         <p class="boxinfo__title">Panding requests</p>
                         <span class="boxinfo__price">18</span>
                       </div>
-                      <div class="boxinfo__icon col-2"><img src="" alt=""></div>
+                      <div class="boxinfo__icon col-2"><img src="https://img.icons8.com/ios-filled/50/000000/chat--v1.png"/></div>
                     </div>
                   </div>
                 </div>
@@ -114,11 +123,135 @@
                     </div>
                   </div>
                 </div>
+            </div>
+            <div class="profile mt-3" id="profile">
+              <div class="row justify-content-between">
+                  <div class="profile__title col-1 col-md-6 mt-5"><h1>Profile</h1></div>
               </div>
+              <div class="row">
+                <div class="coll col-md-3">
+                  <div class="profile__box col-12 profile__box-1 mb-2 p-3 align-items-center">
+                    <img src="https://lamcdn.net/wonderzine.com/post-cover/OCqxOE-1jdcNd-Gho2zQ7Q-default.jpg" alt="img" class="profile-img">
+                    <a href="#" class="button">Change Photo</a>
+                  </div>
+                </div>
+                <div class="coll col-md-9">
+                  <div class="profile__box profile__box-2 mb-2 align-items-center">
+                    <div class="profile__title p-3">User Settings</div>
+                    <form class="row p-3">
+                      <div class="form-input col-6 form-username">
+                        <p>Username</p>
+                        <input type="text" placeholder="user.name">
+                      </div>
+                      <div class="form-input pb-3 col-6 form-email">
+                        <p>Email Address</p>
+                        <input type="email" placeholder="user@example.com">
+                      </div>
+                      <div class="form-input col-6 form-firstName">
+                        <p>First Name</p>
+                        <input type="text" placeholder="John">
+                      </div>
+                      <div class="form-input col-6 form-lastName">
+                        <p>Last Name</p>
+                        <input type="text" placeholder="Doe">
+                      </div>
+                    </form>
+                    <a href="#" class="button ml-3">Save Settings</a>
+                  </div>
+                </div>
+                <div class="coll col-md-3">
+                  <div class="profile__box profile__box-3 mb-2 align-items-center">
+                    <div class="profile__title p-3">Homeworks</div>
+                    <ul class="skills p-3">
+                      <li>
+                        <p>Bootstrap</p>
+                        <span class="percent">20%</span>
+                        <div class="line-percent line-bootstrap"></div>
+                      </li>
+                      <li>
+                        <p>SASS/SCSS</p>
+                        <span class="percent">40%</span>
+                        <div class="line-percent line-sass"></div>
+                      </li>
+                      <li>
+                        <p>Grid+Flex</p>
+                        <span class="percent">60%</span>
+                        <div class="line-percent line-grid"></div>
+                      </li>
+                      <li>
+                        <p>Pseudoclasses</p>
+                        <span class="percent">80%</span>
+                        <div class="line-percent line-classes"></div>
+                      </li>
+                      <li>
+                        <p>HTML+CSS</p>
+                        <span class="percent">Complete!</span>
+                        <div class="line-percent line-html"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="coll col-md-9">
+                  <div class="profile__box profile__box-4 mb-2 align-items-center">
+                    <div class="profile__title p-3">Contact Settings</div>
+                    <form class="row p-3">
+                      <div class="form-input pb-3 col-12 form-username">
+                        <p>Username</p>
+                        <input type="text" placeholder="user.name">
+                      </div>
+                      <div class="form-input col-6 form-email">
+                        <p>Email Address</p>
+                        <input type="email" placeholder="user@example.com">
+                      </div>
+                      <div class="form-input col-6 form-firstName">
+                        <p>First Name</p>
+                        <input type="text" placeholder="John">
+                      </div>
+                    </form>
+                    <a href="#" class="button ml-3">Save Settings</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="footer row">
               <div class="col"><p>Copyright &copy; Nix Student 2022</p></div>
             </div>
           </div>
+                      <!-- Modal -->
+                      <div class="modal fade col-12" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-body row p-0">
+                              <img src="https://www.hillspet.ru/content/dam/cp-sites/hills/hills-pet/en_us/exported/dog-care/nutrition-feeding/images/basset-hound-looks-up.jpg" alt="img" class="image col-4">
+                              <div class="modal__info col-md-8 p-5">
+
+                                <h1 class="pb-3">Create an Account</h1>
+                                <form class="row mb-2">
+                                  <input type="text" placeholder="First Name" class="col-md-6">
+                                  <input type="text" placeholder="Last Name" class="col-md-6">
+                                  <input type="email" placeholder="Email Address" class="col-md-12">
+                                  <input type="password" placeholder="Password" class="col-md-6">
+                                  <input type="password" placeholder="Repeat Password" class="col-md-6">
+                                  <button type="submit" class="register col-md-12">Register Account</button>
+                                </form>
+                                <div class="register__social row pt-2 pb-2">
+                                  <a href="#" class="button-register reg1 col-md-12"><p>Register with Google</p></a>
+                                  <a href="#" class="button-register reg2 col-md-12"><p>Register with Facebook</p></a>
+                                </div>
+                                <div class="row register__recover">
+                                  <a href="#" class="recover col-md-12">Forgout Password?</a>
+                                  <a href="#" class="recover col-md-12">Already have an account? Login</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
         </div>
       </div>
 
