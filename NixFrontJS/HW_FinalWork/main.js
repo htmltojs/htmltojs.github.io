@@ -26,7 +26,7 @@ class Student extends User {
     }
 }
 
-var student = new Student('Maxim', 'Ceaus', 2019);
+let student = new Student('Maxim', 'Ceaus', 2019);
 
 console.log(student.name);
 console.log(student.surname);
@@ -59,7 +59,7 @@ console.log([...nums]);
 
 // Задача 9
 const elems = document.getElementsByTagName('div');
-for (var i = 0; i < elems.length; i++) {
+for (let i = 0; i < elems.length; i++) {
 	elems[i].addEventListener('click', setRed);
 }
 
@@ -186,9 +186,9 @@ for (let i = 0; i < buts.length; i++) {
 
 // Задача 17
 function fcalc(){
-	var	inp = document.querySelectorAll("#calc input");
-	var sum = 0;
-	for(var i=0; i<inp.length-1; i++){
+	let	inp = document.querySelectorAll("#calc input");
+	let sum = 0;
+	for(let i=0; i<inp.length-1; i++){
 		sum = sum + Number(inp[i].value);	
 	}
 	inp[3].value=sum;
