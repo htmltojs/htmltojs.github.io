@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Retro Portfolio</title>
+    <link rel="icon" href="icons_svg/tv.svg">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div><a href="#about-section">About me</a></div>
+        <div><a href="#portfolio-section">Portfolio</a></div>
+        <div>
+            <div class="header-logo" onclick="changeMode()">JD
+                <span class="header-tooltiptext">Click to change color mode</span>
+            </div>
+        </div>
+        <div><a href="#blog-section">My blog</a></div>
+        <div><a href="#contacts-section">Contact me</a></div>
+    </nav>
+</header>
+<!--<hr id="strecthing-line">-->
+<div id="slider-section" class="sections">
+    <div class="top-line"></div>
+    <h1 class="slider-section__title">Retro</h1>
+
+    <div class="slider-section__ribbon-section">
+        <div class="slider-section__ribbon-dots">
+            <div class="slider-section__dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="ribbon">
+                <div class="ribbon-content">
+                    <div class="ribbon-stitches-top"></div>
+                    <p>Old style portfolio</p>
+                    <div class="ribbon-stitches-bottom"></div>
+                </div>
+            </div>
+            <div class="slider-section__dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="slide-container">
+            <div class="slide"></div>
+            <div><a onclick="changeSlide(-1)" class="prev">&#10094;</a></div>
+            <div><a onclick="changeSlide(1)" class="next">&#10095;</a></div>
+        </div>
+        <p id="slideshow-title">Independence Square, Kyiv</p>
+    </div>
+
+    <div class="slider-section__intro">"Hello, I'm John Doe <br> Welcome to retro, my wonderful theme!"</div>
+    
+    <div class="bottom-line"></div>
+</div>
+
+<div id="about-section" class="sections">
+    <div class="top-line"></div>
+    <h1 class="about-section__title">About me</h1>
+    <h3 class="title-underline"><span class="elem-bg-color"><b>&times;&times;&times;</b></span></h3>
+    <p class="section-description">I am graphic designer from Baltimore</p>
+
+    <div class="about-section__content">
+        <div class="about-section__column">
+            <div class="about-section__icons"><img src="pics/tv.png" alt="tv"></div>
+            <h4 class="about-section__column-title">Movies</h4>
+            <p class="about-section__column-description">What i watch</p>
+            <hr class="about-section__column-hr">
+            <div class="about-section__column-text">
+                <p>Clutter is honest! I do believe that has to the users <b>selfexpression</b>. Care. Things which is a projector operating system such formats are deep and profound and meaningful. It's the traditions of data. <u>Good design</u> should be different levels. There's no rational alternative. That's come to complexity.</p>
+            </div>
+        </div>
+
+        <div class="about-section__column">
+            <div class="about-section__icons"><img src="pics/disc.png" alt="disc"></div>
+            <h4 class="about-section__column-title">Music</h4>
+            <p class="about-section__column-description">What i listen</p>
+            <hr class="about-section__column-hr">
+            <div class="about-section__column-text">
+                <p>Good design. The content, you'll love <b>powerpoint should be different</b>. It's about design is that part? Good design is making something looks. And aesthetic. And <i>colour defines</i> your interface. That cannot be overtly different. That has to chance. And restrained, low resolution, but you get rid of materials.</p>
+            </div>
+        </div>
+
+        <div class="about-section__column">
+            <div class="about-section__icons"><img src="pics/tshirt.png" alt="tshirt"></div>
+            <h4 class="about-section__column-title">Clothes</h4>
+            <p class="about-section__column-description">What i wear</p>
+            <hr class="about-section__column-hr">
+            <div class="about-section__column-text">
+                <p>Very honest approach and product. The <u>other product</u> that changes function like the absence of function. And frustrating that products that it's the functional imperative, we kept going and frustrating that we are about bringing order to be better and less complicated to understand.</p>
+            </div>
+        </div>
+
+        <div class="about-section__column">
+            <div class="about-section__icons"><img src="pics/ramen.png" alt="ramen"></div>
+            <h4 class="about-section__column-title">Food</h4>
+            <p class="about-section__column-description">What i eat</p>
+            <hr class="about-section__column-hr">
+            <div class="about-section__column-text">
+                <p>Simplicity. Its context. From so many different levels. There's real simplicity is. Designing and place of the objects we're surrounded by seem trivial. There's <b>no rational alternative</b>. I think that's a very complicated problems without letting people have a very easy to mean so much that acknowledges.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+</div>
+
+<div id="portfolio-section" class="sections">
+    <div class="top-line"></div>
+    <h1 class="portfolio-section__title">Portfolio</h1>
+    <h3 class="title-underline"><span class="elem-bg-color"><b>&times;&times;&times;</b></span></h3>
+    <p class="section-description">Simplicity is the ultimate sophistication</p>
+
+    <div class="portfolio__body body-portfolio _tabs">
+        <div class="body-portfolio__header">
+            <div class="body-portfolio__text">
+                Filter by
+            </div>
+            <ul class="body-portfolio__links">
+                <li><a href="" data-filter="all" class="body-portfolio__link _tabs-item _active"><span
+                            class="dec"></span><span class="dot">all</span></a></li>
+                <li><a href="" data-filter="2" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">design</span></a></li>
+                <li><a href="" data-filter="3" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">logo</span></a>
+                </li>
+                <li><a href="" data-filter="4" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">photography</span></a></li>
+                <li><a href="" data-filter="5" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">poster</span></a></li>
+                <li><a href="" data-filter="6" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">resources</span></a></li>
+                <li><a href="" data-filter="7" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">retro</span></a></li>
+                <li><a href="" data-filter="8" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">t-shirts</span></a></li>
+                <li><a href="" data-filter="9" class="body-portfolio__link _tabs-item"><span
+                            class="dec"></span><span class="dot">videos</span></a></li>
+            </ul>
+        </div>
+        <div class="body-portfolio__cards">
+            <div class="wrapper-tabs _tabs-block _active">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic01.svg" type="image/webp"><img src="pics/portfolio/ic01.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        GALLERIES ARE FUNNY
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic02.svg" type="image/webp"><img src="pics/portfolio/ic02.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        A VIMEO REEL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic03.svg" type="image/webp"><img src="pics/portfolio/ic03.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        LOVE FOR OLD CAMERAS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic04.svg" type="image/webp"><img src="pics/portfolio/ic04.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        DETAILED PROJECT PAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic02.svg" type="image/webp"><img src="pics/portfolio/ic02.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        YOUTUBE VIDEO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic05.svg" type="image/webp"><img src="pics/portfolio/ic05.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        ANOTHER EXTERNAL LINK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic01.svg" type="image/webp"><img src="pics/portfolio/ic01.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        A LIGHTBOX IMAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic03.svg" type="image/webp"><img src="pics/portfolio/ic03.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        THE DARK TEMPEST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic02.svg" type="image/webp"><img src="pics/portfolio/ic02.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        A VIMEO REEL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic02.svg" type="image/webp"><img src="pics/portfolio/ic02.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        A VIMEO REEL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic03.svg" type="image/webp"><img src="pics/portfolio/ic03.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        LOVE FOR OLD CAMERAS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic04.svg" type="image/webp"><img src="pics/portfolio/ic04.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        DETAILED PROJECT PAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic02.svg" type="image/webp"><img src="pics/portfolio/ic02.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        YOUTUBE VIDEO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic05.svg" type="image/webp"><img src="pics/portfolio/ic05.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        ANOTHER EXTERNAL LINK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic01.svg" type="image/webp"><img src="pics/portfolio/ic01.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        A LIGHTBOX IMAGE
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-tabs _tabs-block">
+                <div class="body-portfolio__row">
+                    <div class="body-portfolio__column">
+                        <div class="body-portfolio__card card-portfolio">
+                            <div class="card-portfolio__body">
+                                <div class="card-portfolio__image">
+                                    <picture><source srcset="pics/portfolio/img01.webp" type="image/webp"><img src="pics/portfolio/img01.jpg" alt=""></picture>
+                                </div>
+                                <div class="card-portfolio__bottom">
+                                    <div class="card-portfolio__icon">
+                                        <picture><source srcset="pics/portfolio/ic03.svg" type="image/webp"><img src="pics/portfolio/ic03.svg" alt=""></picture>
+                                    </div>
+                                    <div class="card-portfolio__text">
+                                        THE DARK TEMPEST
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="section-browse">
+            <hr class="section-hr">
+            <p class="browse-btn" onclick="browseAllButton()">Browse all</p>
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+</div>
+
+<div id="blog-section" class="sections">
+    <div class="top-line"></div>
+    <h1 class="blog-section__title">My blog</h1>
+    <h3 class="title-underline"><span class="elem-bg-color"><b>&times;&times;&times;</b></span></h3>
+    <p class="section-description">News from my home</p>
+
+    <div class="blog-section__content">
+        <div class="blog-section__post">
+            <div class="blog-section__post-img-frame">
+                <div class="blog-section__post-img"></div>
+            </div>
+            <div class="blog-section__post-description">
+                <div class="blog-section__post-name">The Magic Wheel</div>
+                <div class="blog-section__post-info">
+                    <div class="blog-section__post-date">July 28, 2014 // Admin // Fun, Travel, Trends</div>
+                    <div class="blog-section__post-responses">1 response</div>
+                </div>
+                <hr class="section-hr">
+                <div class="blog-section__post-text">
+                    It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful.
+                    <a class="blog-section__more-btn">(More...)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-section__post">
+            <div class="blog-section__post-img-frame">
+                <div class="blog-section__post-img"></div>
+            </div>
+            <div class="blog-section__post-description">
+                <div class="blog-section__post-name">The lonely road</div>
+                <div class="blog-section__post-info">
+                    <div class="blog-section__post-date">July 28, 2014 // Admin // Fun, Travel, Trends, Web Design</div>
+                    <div class="blog-section__post-responses">3 responses</div>
+                </div>
+                <hr class="section-hr">
+                <div class="blog-section__post-text">
+                    If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. Anywhere there is text, but the meaning of that text isn’t particularly important, you might see Lorem Ipsum.
+                    <a class="blog-section__more-btn">(More...)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-section__post">
+            <div class="blog-section__post-img-frame">
+                <div class="blog-section__post-img"></div>
+            </div>
+            <div class="blog-section__post-description">
+                <div class="blog-section__post-name">I love gasoline smell</div>
+                <div class="blog-section__post-info">
+                    <div class="blog-section__post-date">July 28, 2014 // Admin // Fun, Trends, Web Design</div>
+                    <div class="blog-section__post-responses">No responses</div>
+                </div>
+                <hr class="section-hr">
+                <div class="blog-section__post-text">
+                    Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover up a paucity of design. Zero out your interface. I think that are deep and profound indeed, these tasks and showing.
+                    <a class="blog-section__more-btn">(More...)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-section__post">
+            <div class="blog-section__post-img-frame">
+                <div class="blog-section__post-img"></div>
+            </div>
+            <div class="blog-section__post-description">
+                <div class="blog-section__post-name">The Magic Wheel</div>
+                <div class="blog-section__post-info">
+                    <div class="blog-section__post-date">July 28, 2014 // Admin // Fun, Travel, Trends</div>
+                    <div class="blog-section__post-responses">1 response</div>
+                </div>
+                <hr class="section-hr">
+                <div class="blog-section__post-text">
+                    It’s not it to understand them in the objects we’re playing. Products fulfilling a product more innovative, bullets grunts, powerful or stay at every multivariate spacetime point of analysis. People have enormous serial correlation. Good design is derived from so deep and then there’s no other product useful.
+                    <a class="blog-section__more-btn">(More...)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-browse">
+        <hr class="section-hr section-hr-long">
+        <p class="browse-btn" onclick="" style="cursor: not-allowed;">Show all posts</p>
+    </div>
+    <div class="bottom-line"></div>
+</div>
+
+<div id="contacts-section" class="sections">
+    <div class="top-line"></div>
+    <h1 class="contacts-section__title">Contact me</h1>
+    <h3 class="title-underline"><span class="elem-bg-color"><b>&times;&times;&times;</b></span></h3>
+    <p class="section-description">I'll be glad to answer your questions!</p>
+
+    <div class="contacts-section__form-container">
+        <form action="">
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            <input type="text" id="email" name="email-address" placeholder="Email">
+            <input type="text" id="subj" name="subject" placeholder="Subject">
+
+            <textarea id="msg" name="message" placeholder="Your message" style="height:200px"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+
+    </div>
+
+    <div class="contacts-section__social">
+        <div class="contacts-section__text">I am social</div>
+        <hr class="section-hr section-hr-white">
+
+        <div class="contacts-section__social-icons">
+            <div class="contacts-section__circle">
+                <div class="contacts-section__border">
+                    <a href="https://twitter.com/dmitriy_dev_ua" target="_blank">
+                        <i class="fa fa-twitter" style="font-size: 34px; color: #383a3c;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-section__circle">
+                <div class="contacts-section__border">
+                    <a href="https://www.facebook.com/dmitriy.maryenko/" target="_blank">
+                        <i class="fa fa-facebook-square" style="font-size: 34px; color: #383a3c;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-section__circle">
+                <div class="contacts-section__border">
+                    <a href="https://github.com/htmltojs" target="_blank">
+                        <i class="fa fa-github" style="font-size: 34px; color: #383a3c;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-section__circle">
+                <div class="contacts-section__border">
+                    <a href="https://www.pinterest.com/" target="_blank">
+                        <i class="fa fa-pinterest" style="font-size: 34px; color: #383a3c;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-section__circle">
+                <div class="contacts-section__border">
+                    <a href="https://www.linkedin.com/in/dmitriy-dev-ua/" target="_blank">
+                        <i class="fa fa-linkedin" style="font-size: 34px; color: #383a3c;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
