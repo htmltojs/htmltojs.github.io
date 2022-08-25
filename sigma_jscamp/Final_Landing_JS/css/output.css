@@ -442,6 +442,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60vw;
   }
   .portfolio__body .body-portfolio__header {
     margin-bottom: 15px;
@@ -461,36 +462,27 @@ body {
     text-align: left;
     line-height: normal;
     align-self: flex-start;
-    margin-right: 40px;
+    margin-right: 10px;
     width: 200px;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
   .portfolio__body .body-portfolio__links {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
   .portfolio__body .body-portfolio__links li {
-    margin-right: 45px;
+    margin-right: 10px;
     margin-bottom: 15px;
     background-color: #fbfaf6;
     border-radius: 7px;
-    line-height: 40px;
+    line-height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     transition: all 0.3s ease 0s;
-  }
-  .portfolio__body .body-portfolio__links li::after {
-    content: "";
-    position: absolute;
-    left: -35px;
-    left: -35px;
-    top: 0;
-    border: solid transparent;
-    border-right-color: #fbfaf6;
-    border-width: 20px;
   }
   .portfolio__body .body-portfolio__links li ._active {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555);
@@ -508,6 +500,7 @@ body {
   }
   .portfolio__body .body-portfolio__link span.dot {
     position: relative;
+    font-size: 1rem;
   }
   .portfolio__body .body-portfolio__link span.dot:before {
     position: absolute;
@@ -541,10 +534,12 @@ body {
     border-width: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     transition: all 0.3s ease 0s;
+    min-width: 250px;
+    height: 350px;
   }
   .portfolio__body .card-portfolio__image {
     display: flex;
@@ -908,5 +903,20 @@ body {
   }
   .slider-section__intro {
     font-size: 22px;
+  }
+  
+  .portfolio__body {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio__body {
+    width: 60vw;
   }
 }
